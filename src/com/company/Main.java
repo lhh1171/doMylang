@@ -1,8 +1,13 @@
 package com.company;
 
-public class Main {
+import java.io.IOException;
 
-    public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) throws IOException {
 	// write your code here
+        MySyntaxTree tree=new MySyntaxTree();
+        ReadTools tools=new ReadTools();
+        tree.createSyntax();
+        tools.start(args[0]);
     }
 }
